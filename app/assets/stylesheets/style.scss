@@ -10,13 +10,26 @@ a:visited {
   text-decoration: none;
 }
 
+.btn {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 2em;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
 .be-red {
-  background-color: red
+  background-color:#F55353;
 }
 
 .white {
   color: white;
 }
+
+
 
 .large-padding {
   padding: 10px 7px;
@@ -25,4 +38,18 @@ a:visited {
 .no-list {
   text-decoration: none;
   list-style: none;
+}
+
+.field {
+  margin-top: 1em;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
 }
