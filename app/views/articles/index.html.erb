@@ -1,9 +1,15 @@
 <% @articles.each do |article|%>
-<h1> <%= article.title %> </h1>
+<h1> <%= link_to article.title, article %> </h1>
 <div>
-  <%= article.body%>
+  nro de visitas <%= article.visits_count %>
 </div>
 <div>
-  <%= article.visits_count %>
+  <%= link_to :"Eliminar", article, method: :delete, class: "red", confirm: "Are you sure?", disable_with: "Processing..."  %>
 </div>
 <% end %>
+
+  <%=link_to "new" do%>
+    <div class="be-red white btn">
+      Nuevo
+    </div>
+  <% end %>

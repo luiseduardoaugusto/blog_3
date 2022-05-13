@@ -16,13 +16,18 @@ a:visited {
   outline: none;
   text-transform: capitalize;
   cursor: pointer;
-  padding: 2em;
+  padding: 1em;
   font-size: 1.2em;
   border-radius: 5px;
+  width: 4em;
 }
 
 .be-red {
   background-color:#F55353;
+}
+
+.red {
+  color: #F55353 !important;
 }
 
 .white {
@@ -52,4 +57,9 @@ a:visited {
   display: block;
   padding: 10px 0px;
   font-size: 1.2em;
+}
+
+.top-space {
+  padding-top: 0em;
+  margin: 1em;
 }
