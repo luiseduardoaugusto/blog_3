@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :articles, except: [:delete]
+  resources :articles, except: [:delete] do
+    resources :comments
+  end
   root "welcome#index"
 end
