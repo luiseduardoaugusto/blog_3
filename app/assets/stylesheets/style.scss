@@ -19,7 +19,7 @@ a:visited {
   padding: 1em;
   font-size: 1.2em;
   border-radius: 5px;
-  width: 4em;
+  width: auto;
 }
 
 .be-red {
@@ -35,9 +35,11 @@ a:visited {
 }
 
 
-
 .large-padding {
   padding: 10px 7px;
+}
+.text-left {
+  text-align: left;
 }
 
 .no-list {
@@ -45,21 +47,22 @@ a:visited {
   list-style: none;
 }
 
-.field {
+.field, .top-space, .actions {
   margin-top: 1em;
 }
+
 
 .form-control {
   border: none;
   border-bottom: 1px solid;
   outline: none;
-  width: 100%;
+  width: 80%;
   display: block;
   padding: 10px 0px;
   font-size: 1.2em;
+
 }
 
-.top-space {
-  padding-top: 0em;
-  margin: 1em;
+.container {
+  margin: 0 1em;
 }

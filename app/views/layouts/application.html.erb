@@ -14,25 +14,15 @@
   </head>
 
   <body>
-    <header>
-      <nav class="be-red white large-padding">
-        <ul class="no-list row center-xs">
-          <li class="col-md">
-            <%= link_to "Inicio", root_path %>
-          </li>
-          <li class="col-md">
-            Diseño
-          </li>
-          <li class="col-md">
-            Programación
-          </li>
-          <li class="col-md">
-            Tecnología
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
-    <%= yield %>
+    <%=render "partials/navigation"%>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+
   </body>
 </html>

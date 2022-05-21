@@ -1,10 +1,5 @@
-<h1>este era el verdadero</h1>
-<p>la vista se creo automaticamente</p>
-
-<h1>Hola mundo</h1>
-<p>Esta es mi primer blog hecho en rails</p>
-<% [1,2,3,4].each do |number| %>
-<p>Números: <%= number*2 %></p>
+<% if user_signed_in? %>
+  <h1>bienvenido <%= current_user.email %></h1>
+  <% else %>
+  <h1>Registrate en nuestra nueva plataforma</h1>
 <% end %>
-<% mundo="luis"%>
-<%="Hola #{mundo}" %>

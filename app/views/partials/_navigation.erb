@@ -1,0 +1,29 @@
+<header>
+      <nav class="be-red white large-padding">
+        <ul class="no-list row center-xs">
+          <li class="col-md">
+            <%= link_to "Inicio", root_path %>
+          </li>
+          <li class="col-md">
+            <%= link_to "Posts", articles_path %>
+          </li>
+          <li class="col-md">
+            <%= link_to "Nuevo Post", new_article_path %>
+          </li>
+
+          <%if user_signed_in? %>
+            <li class="col-md">
+              <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete %>
+            </li>
+          <% else %>
+            <li class="col-md">
+              <%= link_to "Iniciar sesion", new_user_session_path %>
+            </li>
+            <li class="col-md">
+              <%= link_to "Crear cuenta", new_user_registration_path %>
+            </li>
+
+          <%end%>
+        </ul>
+      </nav>
+    </header>
